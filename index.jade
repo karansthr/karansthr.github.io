@@ -1,0 +1,203 @@
+// Port of the awesome xetex resume template by Debarghya Das
+// Jade Template
+// Author: Ankit Sultana
+// Original Repo: https://github.com/bk2dcradle/jade-resume
+// LICENSE: GNU GPL v3
+
+doctype html
+html(lang="en")
+    head
+        title= 'Karan\'s Resume'
+        link(href="includes/css/style.css", rel="stylesheet")
+        // Link to the corresponding fonts
+        // Font: Raleway | https://github.com/mrkelly/lato.git
+        link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
+        // Font: Lato | https://github.com/softwaymedical/raleway.git
+        link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
+    body
+        #update-status
+            p.
+                Last updated on Aug 19, 2018
+        .heading
+            h1 #[span #{firstName}] #{lastName}
+            h3 #[a(href="https://karansthr.github.io" target="_blank") karansthr.github.io]
+            h3 #[a(href="mailto://karansthr97@gmail.com") karansthr97@gmail.com] | #[a(href="tel://+919166054624") +91 9166054624]
+        hr
+        .content
+            ////////////////////////
+            // Left Column begins //
+            ////////////////////////
+            .left-column
+                ///////// Begin Section: Education /////////
+                h1 Education
+                // Begin Subsection
+                h2 SKIT, Jaipur
+                h4 B.Tech in Computer Science
+                h4 Aug 2015 - May 2019
+                h4 Aggregate (till 6th sem): 71.08%
+                p Jaipur, Rajasthan, India
+                // Space between two subsections
+                br
+                // Begin Subsection
+                h2 Modern Sr. Sec. School
+                h4 High School | Science
+                h4 July 2013 - May 2015
+                h4 12th standard: 82.8%
+                p Sirohi, Rajasthan, India
+                br
+                // Begin Subsection
+                h2 Shri Abhay Nobles School
+                h4 Till April 2013
+                h4 School | Secondary School
+                h4 10th standard: 79.5%
+                p Takhatgarh, Rajasthan, India
+
+
+                ///////// Begin Section: Links /////////
+                h1 Links
+                // List follows
+                ul.nostyle
+                    - for (var i = 0; i < links.length; i++)
+                        li #{links[i][0]}://#[a(href="#{links[i][1]}"  target="_blank") #{links[i][2]}]
+
+                ///////// Begin Section: Coursework /////////
+                h1 Coursework
+
+                // Begin Subsection
+                h2 Undergraduate
+                - for (var i = 0; i < undergradCourses.length; i++)
+                    p= undergradCourses[i]
+
+                ///////// Begin Section: Skills /////////
+                h1 Skills
+                // Begin Subsection
+                h2 Programming
+                // Use no-overlap if inline list overlaps with any element
+                // above it
+                h4.no-overlap Comfortable
+                // Note: Use span with li elements so the bullets can be closer
+                //       than the browser default value. Refer:
+                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
+                ul.inline
+                    - for (var i = 0; i < languagesStrong.length; i++)
+                        li
+                            span= languagesStrong[i]
+
+                .clearfix
+
+                h4.no-overlap Familiar
+                ul.inline
+                    - for (var i = 0; i < languagesFamiliar.length; i++)
+                        li
+                            span= languagesFamiliar[i]
+
+                .clearfix
+
+                h4.no-overlap Tools
+                ul.inline
+                    - for (var i = 0; i < tools.length; i++)
+                        li
+                            span= tools[i]
+
+                .clearfix
+
+                h4.no-overlap Frameworks
+                ul.inline
+                    - for (var i = 0; i < frameworks.length; i++)
+                        li
+                            span= frameworks[i]
+
+                .clearfix
+
+                h4.no-overlap Libraries
+                ul.inline
+                    - for (var i = 0; i < libraries.length; i++)
+                        li
+                            span= libraries[i]
+
+
+            ////////////////////////
+            /// Left Column ends ///
+            ////////////////////////
+
+
+            // Right Column Begins//
+            ////////////////////////
+            .right-column
+                ///////// Begin Section: Experience /////////
+                h1 Experience
+                // Begin Subsection
+                h2 MiStay Hospitality Pvt. Ltd. | #[span Full Stack Developer Intern]
+                h3 May 2018 - July 2018 | Summer Internship | Bengaluru, India
+                ul
+                    li API and webhook integration
+                    li Back end development with Python/Django
+                    li Web APIs with Django REST framework
+                    li Front end development with ReactJS and Jquery
+                // Space between subsections, in case if they are too close
+                br
+
+                ///////// Begin Section: Projects /////////
+                h1 Projects
+
+                h2 Playlist Length | #[span Python Package]
+                h3 #[a(href="https://github.com/karansthr/Playlist-Length"  target="_blank") Link] | Feb 2018 - Mar 2018 | FFMPEG
+
+                ul
+                    li Available on PyPi, package name "urlshortener-cli"
+                    li Calculate length of all the video files in a directory and sub-directories
+                    li Command-line, easy to use tool
+
+
+                h2 fosstack.com | #[a(href="https://fosstack.com"  target="_blank") Blog]
+                h3 #[a(href="https://github.com/fosstack"  target="_blank") Link] | Sep 2017 | Write Articles On Django, Python And FOSS
+                ul
+                    li Built with Python/Django, JavaScript, Bootstrap4
+                    li Hosted on DigitalOcean VPS, Ngnix server
+
+
+                h2 URL Shortener | #[span Python/Django]
+                h3 #[a(href="https://github.com/karansthr/url-shortener"  target="_blank") Link] | Dec 2017 - Jan 2018 | Python Package
+                ul
+                    li Python package to shorten URLs with command line
+                    li Available on PyPi, package name "urlshortener-cli"
+                    li Implemented RESTful APIs for command line Python package
+                    li Option to create and share document with help of TinyMCE
+
+
+                h2 Online Crime Reporting System | #[span Python/Django]
+                h3 #[a(href="https://github.com/karansthr/raj_hack2k17"  target="_blank") Link] | Dec 2017 - Jan 2018 | Rajasthan Hackathon 3.0 | Team of 4
+                ul
+                    li Features includes Digitalization of Records, Anonymous Reporting, File Online FIR, Cyber Crime Cell, Analytics and Statistics
+                    li Built with Python/Django, JavaScript(Jquery), Bootstrap4, Bhamashah API
+
+
+                h2 Tic Tac Toe | #[span Android/Java]
+                h3 #[a(href="https://github.com/karansthr/tic-tac-toe"  target="_blank") link] | SEP 2016 - OCT 2016
+                ul
+                    li Two player and single player game.
+                    li Easy, medium, hard, impossible difficulty level
+
+
+
+                ///////// Begin Section: OTHERS /////////
+
+                h1 Others
+                ul
+                    li 2017 #[a(href="#") PYTHON CLUB] - Mentor of Python Club in college
+                    li 2016 #[a(href="https://www.hackerearth.com/challenge/college/code-emblaze/"  target="_blank") CODE EMBLAZE] - Organized coding competition on Hackerearth
+                    //li 2009 SCIENCE FAIR - Participated in state level competition
+                    //li 2009 ROLL PLAY - Participated in state level roll play
+                    //li 2008 DEBATE - Participated in state level debate competition
+
+                ///////// Begin Section: INTERESTS /////////
+                h1 Interests
+                ul
+                    li Learning FOSS technologies
+                    li Technical blog writing
+                    li Listening to Hans Zimmer's music
+
+
+            ////////////////////////
+            /// Right Column Ends //
+            ////////////////////////

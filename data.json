@@ -1,0 +1,21 @@
+{
+    "firstName": "Karan",
+    "lastName": "Suthar",
+    "languagesStrong": ["Python", "C", "Javascript"],
+    "languagesFamiliar": ["Android", "MySQL", "Octave"],
+    "tools":["Git", "Heroku", "DigitalOcean", "Vim", "Sublime Text"],
+    "frameworks": ["Django", "Bootstrap"],
+    "libraries": ["Jquery", "ReactJS", "OpenCV"],
+    "undergradCourses": ["Operating Systems",
+                         "Object Oriented Programming",
+                         "Data Structures and Algorithm",
+                         "Compiler Construction",
+                         "Software Engineering",
+                         "Unix Tools and Scripting"],
+    "links": [["Facebook", "https://facebook.com/karansthr", "karansthr"],
+              ["GitHub", "https://github.com/karansthr", "karansthr"],
+              ["LinkedIn", "https://linkedin.com/in/karansthr", "karansthr"],
+              ["StackOverflow", "https://stackoverflow.com/users/8428994/", "/users/8428994/"],
+              ["Twitter", "https://twitter.com/@karansthr", "@karansthr"]
+            ]
+}
