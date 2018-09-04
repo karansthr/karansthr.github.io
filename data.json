@@ -1,10 +1,10 @@
 {
     "firstName": "Karan",
     "lastName": "Suthar",
-    "languagesStrong": ["Python", "C", "Javascript"],
-    "languagesFamiliar": ["Android", "MySQL", "Octave"],
+    "languagesStrong": ["Python", "C"],
+    "languagesFamiliar": ["C++", "JavaScript", "MySQL"],
     "tools":["Git", "Heroku", "DigitalOcean", "Vim", "Sublime Text"],
-    "frameworks": ["Django", "Bootstrap"],
+    "frameworks": ["Django", "Flask", "Bootstrap"],
     "libraries": ["Jquery", "ReactJS", "OpenCV"],
     "undergradCourses": ["Operating Systems",
                          "Object Oriented Programming",
