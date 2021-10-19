@@ -9,12 +9,11 @@ html(lang="en")
         // Font: Lato | https://github.com/softwaymedical/raleway.git
         link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
     body
-        #update-status
-            p.
-                Last updated on Mar 10, 2019
+        //- #update-status
+        //-     p.
+        //-         Last updated on Mar 10, 2019
         .heading
-            h1 #{firstName} #{lastName}
-            h3 #[a(href="https://karansthr.github.io" target="_blank") karansthr.github.io]
+            h1 #[span #{firstName}] #{lastName}
             h3 #[a(href="mailto://karansthr97@gmail.com") karansthr97@gmail.com] | #[a(href="tel://+919166054624") +91 9166054624]
         hr
         .content
@@ -28,7 +27,7 @@ html(lang="en")
                 h2 SKIT, Jaipur
                 h4 B.Tech in Computer Science
                 h4 Aug 2015 - May 2019
-                h4 Aggregate (till 6th sem): 71.12%
+                h4 Aggregate (till 6th sem): 71.25%
                 p Jaipur, Rajasthan, India
                 // Space between two subsections
                 br
@@ -40,11 +39,11 @@ html(lang="en")
                 p Sirohi, Rajasthan, India
                 br
                 // Begin Subsection
-                h2 Shri Abhay Nobles School
-                h4 Till April 2013
-                h4 School | Secondary School
-                h4 10th standard: 79.5%
-                p Takhatgarh, Rajasthan, India
+                //- h2 Shri Abhay Nobles School
+                //- h4 Till April 2013
+                //- h4 School | Secondary School
+                //- h4 10th standard: 79.5%
+                //- p Takhatgarh, Rajasthan, India
 
 
                 ///////// Begin Section: Links /////////
@@ -68,7 +67,7 @@ html(lang="en")
                 h2 Programming
                 // Use no-overlap if inline list overlaps with any element
                 // above it
-                h4.no-overlap Comfortable
+                h4.no-overlap Strong
                 // Note: Use span with li elements so the bullets can be closer
                 //       than the browser default value. Refer:
                 //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
@@ -103,11 +102,11 @@ html(lang="en")
 
                 .clearfix
 
-                h4.no-overlap Libraries
-                ul.inline
-                    - for (var i = 0; i < libraries.length; i++)
-                        li
-                            span= libraries[i]
+                //- h4.no-overlap Libraries
+                //- ul.inline
+                //-     - for (var i = 0; i < libraries.length; i++)
+                //-         li
+                //-             span= libraries[i]
 
 
             ////////////////////////
@@ -121,13 +120,33 @@ html(lang="en")
                 ///////// Begin Section: Experience /////////
                 h1 Experience
                 // Begin Subsection
-                h2 MiStay Hospitality Pvt. Ltd. | #[span Full Stack Developer Intern]
+
+                h2 DeepSource | #[span Software Engineer | Backend]
+                h3 April 2020 - Present | Bengaluru, India
+                p DeepSource is a <strong>Y Combinator</strong> backed startup that builds workflows to analyze source code with <strong>static analysis</strong>. My responsibilities included but not limited to building core product services end to end, and making the application <strong>ready for enterprise offering</strong> right from its inception to deployment.
+                ul
+                    li Integrated Bitbucket VCS to analyze repositories with autofix 
+                    li Designed and worked on <strong>RBAC</strong>, <strong>Audit Log</strong> and <strong>SSO with SAML</strong> which helped make the application enterprise ready
+                    li Developed <strong>internal tools</strong> for syncing analyzer assets with application
+                    li Built a <strong>webhook relay service</strong> to efficiently retry failed webhooks from the VCS providers in case our stack goes down
+                    li Increase unit test coverage of the critical parts of the product to <strong>100%</strong>
+                // Space between subsections, in case if they are too close
+                
+                br
+                h2 Cyware Labs | #[span Software Engineer | Backend]
+                h3 May 2019 - March 2020 | Bengaluru, India
+                ul
+                    li Built <strong>License Manager</strong> from scratch that helped in generating and managing enterprise licenses, and developed feature gating on application side to limit feature, handle expiry etc. based on the license
+                    li Responsible for <strong>end-to-end enterprise deployments</strong>
+                // Space between subsections, in case if they are too close
+                br
+
+                h2 MiStay | #[span Software Engineering Intern]
                 h3 May 2018 - July 2018 | Dec 2018 - Feb 2019 | Bengaluru, India
                 ul
-                    li API and webhook integration
-                    li Back end development with Python/Django
-                    li Web APIs with Django REST framework
-                    li Front end development with ReactJS and Jquery
+                    li Made parts of the system Python 2/3 compatible
+                    li Worked on internal tools used by operations team
+                    li API and webhook integration for services like Freshdesk, SurveyMonkey etc.
                 // Space between subsections, in case if they are too close
                 br
 
@@ -135,61 +154,51 @@ html(lang="en")
                 h1 Projects
 
                 h2 Playlist Length | #[span Python Package]
-                h3 #[a(href="https://github.com/karansthr/Playlist-Length"  target="_blank") Link] | Feb 2018 - Mar 2018 | FFMPEG
+                h3 #[a(href="https://github.com/karansthr/Playlist-Length"  target="_blank") Link] | Feb 2018 - Mar 2018 | FFMPEG | PyPI/playlist-length
 
                 ul
-                    li Available on PyPi, package name "playlist-length"
-                    li Calculate length of all the video files in a directory and sub-directories
-                    li Command-line, easy to use tool
+                    li Command-line, tool for calculating length of all the videos in a directory
 
-
-                h2 fosstack.com | #[a(href="https://fosstack.com"  target="_blank") Blog]
-                h3 #[a(href="https://github.com/fosstack"  target="_blank") Link] | Sep 2017 | Write Articles On Django, Python And FOSS
-                ul
-                    li Built with Python/Django, JavaScript, Bootstrap4
-                    li Hosted on DigitalOcean VPS, Ngnix server
+                //- h2 fosstack.com | #[a(href="https://fosstack.com"  target="_blank") Blog]
+                //- h3 #[a(href="https://github.com/fosstack"  target="_blank") Link] | Sep 2017 | Write Articles On Django, Python And FOSS
+                //- ul
+                //-     li Built with Python/Django, JavaScript, Bootstrap4
+                //-     li Hosted on DigitalOcean VPS, Ngnix server
 
 
                 h2 URL Shortener | #[span Python/Django]
-                h3 #[a(href="https://github.com/karansthr/url-shortener"  target="_blank") Link] | Dec 2017 - Jan 2018 | Python Package
+                h3 #[a(href="https://github.com/karansthr/url-shortener"  target="_blank") Link] | Dec 2017 - Jan 2018 | Python Package |  #[a(href="https://pypi.org/project/urlshortener-cli/0.4dev/"  target="_blank") PyPI/urlshortener-cli]
                 ul
-                    li Python package to shorten URLs with command line
-                    li Available on PyPi, package name "urlshortener-cli"
-                    li Implemented RESTful APIs for command line Python package
-                    li Option to create and share document with help of TinyMCE
+                    li A web-app and CLI tool to shorten URLs
+
+                //- h2 Online Crime Reporting System | #[span Python/Django]
+                //- h3 #[a(href="https://github.com/karansthr/raj_hack2k17"  target="_blank") Link] | Dec 2017 - Jan 2018 | Rajasthan Hackathon 3.0 | Team of 4
+                //- ul
+                //-     li Features includes Digitalization of Records, Anonymous Reporting, File Online FIR, Cyber Crime Cell, Analytics and Statistics
+                //-     li Built with Python/Django, JavaScript(Jquery), Bootstrap4, Bhamashah API
 
 
-                h2 Online Crime Reporting System | #[span Python/Django]
-                h3 #[a(href="https://github.com/karansthr/raj_hack2k17"  target="_blank") Link] | Dec 2017 - Jan 2018 | Rajasthan Hackathon 3.0 | Team of 4
-                ul
-                    li Features includes Digitalization of Records, Anonymous Reporting, File Online FIR, Cyber Crime Cell, Analytics and Statistics
-                    li Built with Python/Django, JavaScript(Jquery), Bootstrap4, Bhamashah API
-
-
-                h2 Tic Tac Toe | #[span Android/Java]
-                h3 #[a(href="https://github.com/karansthr/tic-tac-toe"  target="_blank") link] | SEP 2016 - OCT 2016
-                ul
-                    li Two player and single player game.
-                    li Easy, medium, hard, impossible difficulty level
-
-
+                //- h2 Tic Tac Toe | #[span Android/Java]
+                //- h3 #[a(href="https://github.com/karansthr/tic-tac-toe"  target="_blank") link] | SEP 2016 - OCT 2016
+                //- ul
+                //-     li Two player and single player game with multiple difficulty levels.
 
                 ///////// Begin Section: OTHERS /////////
 
                 h1 Others
                 ul
-                    li 2017 #[a(href="#") PYTHON CLUB] - Mentor of Python Club in college
-                    li 2016 #[a(href="https://www.hackerearth.com/challenge/college/code-emblaze/"  target="_blank") CODE EMBLAZE] - Organized coding competition on Hackerearth
+                    li 2017 #[a(href="#") PYTHON CLUB] - Mentor/Instructor of the Python Club at SKIT College.
+                    li 2016 #[a(href="https://www.hackerearth.com/challenge/college/code-emblaze/"  target="_blank") CODE EMBLAZE] - Problem setter and organizer of a national-level coding competition on online coding platform HackerEarth
                     //li 2009 SCIENCE FAIR - Participated in state level competition
                     //li 2009 ROLL PLAY - Participated in state level roll play
                     //li 2008 DEBATE - Participated in state level debate competition
 
-                ///////// Begin Section: INTERESTS /////////
-                h1 Interests
-                ul
-                    li Learning FOSS technologies
-                    li Technical blog writing
-                    li Listening to Hans Zimmer's music
+                //- ///////// Begin Section: INTERESTS /////////
+                //- h1 Interests
+                //- ul
+                //-     li Learning FOSS technologies
+                //-     li Technical blog writing
+                //-     li Listening to Hans Zimmer's music
 
 
             ////////////////////////

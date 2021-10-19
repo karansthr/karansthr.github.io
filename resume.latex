@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Karan}{Suthar}{ 
+\href{mailto:karansthr97@gmail.com}{karansthr97@gmail.com} | +919166054624
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\vspace{\topsep}
+
+\subsection{SKIT, Jaipur}
+\descript{B.Tech in Computer Science}
+\location{Aug 2015 - May 2019}
+\location{Average score - 71.25\%}
+\location{Jaipur, Rajasthan}
+\sectionsep
+
+\subsection{MODERN SR. SEC. SCHOOL}
+\descript{High School | Science}
+\location{2013 - 2015}
+\location{ 12th Standard: 82.8\%}
+\sectionsep
+
+\subsection{SHRI ABHAY NOBELS}
+\descript{Secondary School}
+\location{Till 2013}
+\location{ 10th standard: 79.5\%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Github:// \href{https://github.com/karansthr}{\bf karansthr} \\
+LinkedIn://  \href{https://www.linkedin.com/in/karansthr}{\bf karansthr} \\
+Twitter://  \href{https://twitter.com/karansthr}{\bf @karansthr} \\
+StackOverflow://  \href{https://stackoverflow.com/users/8428994/karansthr}{\bf karansthr}
+\vspace{\topsep}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Operating Systems \\
+Object Oriented Programming \\
+Data Structures and Algorithm \\
+Compiler Construction \\
+Software Engineering \\
+Unix Tools and Scripting \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Strong:}
+Python \\ 
+\location{Familiar:}
+C \textbullet{} C++ \textbullet{} JavaScript \\
+\location{Frameworks:}
+Django \textbullet{} Flask \textbullet{} Bootstrap \\
+\location{Tools:}
+Git \textbullet{} Docker
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\vspace{\topsep}
+
+\runsubsection{DeepSource}
+\descript{| Software Engineer }
+\location{April 2020 - Present | Bengaluru, India}
+\vspace{\topsep}
+
+DeepSource is a \textbf{Y Combinator} backed startup that builds workflows to analyze source code with static analysis. My responsibilities included but not limited to building \textbf{core product services end to end}, and making the application \textbf{ready for enterprise} offering right from its inception to deployment.
+\vspace{\topsep}
+\begin{tightemize}
+\item Integrated Bitbucket VCS to analyze repositories with autofix
+\item Designed and worked on \textbf{RBAC}, \textbf{Audit Log} and \textbf{SSO with SAML} which helped make the application enterprise ready
+\item Developed \textbf{internal tools} for syncing analyzer assets with application
+\item Built a \textbf{webhook relay service} to efficiently retry failed webhooks from the VCS providers in case our stack goes down
+\item Increase unit test coverage of the critical parts of the product to \textbf{100\%}
+\end{tightemize}
+\sectionsep
+
+\vspace{\topsep}
+\runsubsection{Cyware Labs}
+\descript{| Software Engineer}
+\location{May 2019 – March 2020 | Bengaluru, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Built \textbf{License Manager} for generating and managing enterprise license from scratch -- and developed feature gating on application side to limit feature, handle expiry etc. based on the license
+\item Responsible for \textbf{end-to-end enterprise deployments}
+\end{tightemize}
+\sectionsep
+
+\vspace{\topsep}
+\runsubsection{MiStay}
+\descript{| Software Engineering Intern}
+\location{May 2018 – July 2018 | Dec 2019 - Feb 2019  | Bengaluru, India}
+\begin{tightemize}
+\item Made parts of the system Python 2/3 compatible
+\item Worked on internal tools used by operations team
+\item API and webhook integration for services like Freshdesk, SurveyMonkey etc.
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\vspace{\topsep}
+\runsubsection{Playlist length} \descript{Python Package}
+\location{\href{https://github.com/karansthr/Playlist-Length/}{\bf Source} | Feb 2018 - Mar 2018 | FFMPEG | PyPI/Playlist-Length}
+\begin{tightemize}
+\item Command-line, tool for calculating length of all the videos in a directory
+\end{tightemize}
+\vspace{\topsep}
+\runsubsection{URL Shortener} \descript{Python/Django}
+\location{\href{https://github.com/karansthr/url-shortener/}{\bf Source} | Feb 2018 - Mar 2018 | FFMPEG | PyPI/Playlist-Length}
+\begin{tightemize}
+\item A web-app and CLI tool to shorten URLs
+\end{tightemize}
+\sectionsep
+
+\section{POSITION OF RESPONSIBILITY}
+\begin{tightemize}
+\vspace{\topsep}
+\item 2017 \textbf{PYTHON CLUB} - Mentor/Instructor of the Python Club at SKIT College.
+\item 2016 \href{https://www.hackerearth.com/challenge/college/code-emblaze/}{\bf CODE EMBLAZE} - Problem setter and organizer of a national-level coding competition on online coding platform HackerEarth
+\end{tightemize}
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

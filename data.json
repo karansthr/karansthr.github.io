@@ -1,10 +1,10 @@
 {
     "firstName": "Karan",
     "lastName": "Suthar",
-    "languagesStrong": ["Python", "C"],
-    "languagesFamiliar": ["C++", "JavaScript", "MySQL"],
-    "tools":["Git", "Heroku", "DigitalOcean", "Vim", "VS Code"],
-    "frameworks": ["Django", "Flask", "Bootstrap"],
+    "languagesStrong": ["Python"],
+    "languagesFamiliar": ["C++", "JavaScript", "MySQL", "PostgreSQL"],
+    "tools":["Git","Docker"],
+    "frameworks": ["Django", "Flask"],
     "libraries": ["Jquery"],
     "undergradCourses": ["Operating Systems",
                          "Object Oriented Programming",
@@ -12,10 +12,9 @@
                          "Compiler Construction",
                          "Software Engineering",
                          "Unix Tools and Scripting"],
-    "links": [["Facebook", "https://facebook.com/karansthr", "karansthr"],
+    "links": [
               ["GitHub", "https://github.com/karansthr", "karansthr"],
               ["LinkedIn", "https://linkedin.com/in/karansthr", "karansthr"],
-              ["StackOverflow", "https://stackoverflow.com/users/8428994/", "/users/8428994/"],
               ["Twitter", "https://twitter.com/@karansthr", "@karansthr"]
             ]
 }
